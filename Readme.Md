@@ -41,8 +41,7 @@ DB_DIALECT=postgres
 
 - In the src/database/index.js file, configure the database connection:
 
-``` const { Sequelize } = require('sequelize');
-```
+ ```const { Sequelize } = require('sequelize');```
 
 - Define the Team model and its associations in the src/models/team.js file:
 
