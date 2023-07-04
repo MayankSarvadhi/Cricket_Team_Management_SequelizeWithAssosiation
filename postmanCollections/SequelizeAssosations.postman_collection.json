@@ -1,0 +1,844 @@
+{
+	"info": {
+		"_postman_id": "3e5c70f0-6f9c-4bf0-8b04-391aad4e8d4f",
+		"name": "SequelizeAssosations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28042243"
+	},
+	"item": [
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "CreateTeam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teamName\" : \"Austreliya\",\n    \"coachName\" : \"camron green\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/Team",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Team"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Team",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"teamName\" : \"india\",\n    \"coachName\" : \"c1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9600/Team",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9600",
+									"path": [
+										"Team"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "124"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7c-8VIz1CgY29e04AR7K7q3TzMIoTc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 08:43:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"1\",\n    \"teamName\": \"india\",\n    \"coachName\": \"c1\",\n    \"updatedAt\": \"2023-07-03T08:43:02.132Z\",\n    \"createdAt\": \"2023-07-03T08:43:02.132Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteTeam",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/Team/8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Team",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteTeam",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/Team/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Team",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-Qk57ukiQpKHSKlsGzYa4KjTunxk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 09:19:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statusCode\": 200,\n    \"data\": 1,\n    \"message\": \"Data deleted Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateTeam",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teamName\" : \"Austreliya\",\n    \"coachName\" : \"team cook\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/Team/9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Team",
+								"9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateTeam",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"teamName\" : \"demo2\",\n    \"coachName\" : \"c3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/Team/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Team",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "202"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ca-X4d9G5wU+7IOYof5POlXa+7iEkc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 09:18:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"StatusCode\": 200,\n    \"data\": {\n        \"id\": \"1\",\n        \"teamName\": \"demo2\",\n        \"coachName\": \"c3\",\n        \"createdAt\": \"2023-07-03T08:43:02.132Z\",\n        \"updatedAt\": \"2023-07-03T09:18:56.437Z\"\n    },\n    \"message\": \"Data Update Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Players",
+			"item": [
+				{
+					"name": "Add_Players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"playerName\":\"Marcus Harris\",\n    \"type\":\"batsman\",\n    \"Team_id\":\"9\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/Player",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Player"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddPlayers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"playerName\":\"Marcus Harris\",\n    \"type\":\"batsman\",\n    \"Team_id\":\"9\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/Player",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Player"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "225"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e1-ca7+CEubPBvXE4xMrU0q/Dnltt8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 09:38:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"StatusCode\": 201,\n    \"data\": {\n        \"id\": 15,\n        \"playerName\": \"Marcus Harris\",\n        \"type\": \"batsman\",\n        \"Team_id\": \"9\",\n        \"updatedAt\": \"2023-07-03T09:38:46.597Z\",\n        \"createdAt\": \"2023-07-03T09:38:46.597Z\"\n    },\n    \"message\": \"Data Insert Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeletePlayers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/Player/3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Player",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeletePlayers",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/Player/3",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Player",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-Qk57ukiQpKHSKlsGzYa4KjTunxk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 09:41:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"statusCode\": 200,\n    \"data\": 1,\n    \"message\": \"Data deleted Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdatePlayers",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"playerName\": \"Hardik Pandya\",\n    \"type\": \"batsman\",\n    \"Team_id\": \"4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/Player/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Player",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdatePlayers",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"playerName\": \"Hardik Pandya\",\n    \"type\": \"batsman\",\n    \"Team_id\": \"4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/Player/2",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Player",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-6cS8SVd3KZ6aDtSulikPGoRbB0s\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 09:43:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"StatusCode\": 200,\n    \"data\": {\n        \"id\": 2,\n        \"playerName\": \"Hardik Pandya\",\n        \"type\": \"batsman\",\n        \"Team_id\": \"4\",\n        \"createdAt\": \"2023-07-03T09:32:59.674Z\",\n        \"updatedAt\": \"2023-07-03T09:43:14.899Z\"\n    },\n    \"message\": \"Data Update Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Assosiations",
+			"item": [
+				{
+					"name": "get particular type Players",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\":\"batsman\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/Team/allTypes/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Team",
+								"allTypes",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get particular type Players",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\":\"batsman\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/Team/allTypes/4",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Team",
+										"allTypes",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "283"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11b-7rHKb/PQe2kqCR0gK1wfFYxKqQk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 04:59:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"StatusCode\": 200,\n    \"data\": {\n        \"id\": \"4\",\n        \"teamName\": \"india\",\n        \"coachName\": \"Ashish Nehra\",\n        \"PlayerDetails\": [\n            {\n                \"playerName\": \"Ms Dhoni\",\n                \"type\": \"batsman\"\n            },\n            {\n                \"playerName\": \"Jadeja\",\n                \"type\": \"batsman\"\n            },\n            {\n                \"playerName\": \"Hardik Pandya\",\n                \"type\": \"batsman\"\n            }\n        ]\n    },\n    \"message\": \"Data Fetch SuccessFully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get one team with all players.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/Team/9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Team",
+								"9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get one team with all players.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/Team/9",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Team",
+										"9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "445"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1bd-PHiBSPQzHRuDE5UV8IibL/cnGvw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 05:03:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"StatusCode\": 200,\n    \"data\": {\n        \"id\": \"9\",\n        \"teamName\": \"Austreliya\",\n        \"coachName\": \"team cook\",\n        \"PlayerDetails\": [\n            {\n                \"playerName\": \"David warner\",\n                \"type\": \"all-rounder\"\n            },\n            {\n                \"playerName\": \"camron green\",\n                \"type\": \"all-rounder\"\n            },\n            {\n                \"playerName\": \"Josh Hazlewood\",\n                \"type\": \"bowler\"\n            },\n            {\n                \"playerName\": \"pat cuumins\",\n                \"type\": \"bowler\"\n            },\n            {\n                \"playerName\": \"Mitchell marsh\",\n                \"type\": \"batsman\"\n            },\n            {\n                \"playerName\": \"Marcus Harris\",\n                \"type\": \"batsman\"\n            }\n        ]\n    },\n    \"message\": \"Data Fetch SuccessFully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get all teams with it’s player.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/Team",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Team"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all teams with it’s player.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/Team",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Team"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "969"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c9-Vr+aseo975G9iaDiZ4xZYwawmrM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 05:04:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"StatusCode\": 200,\n    \"data\": [\n        {\n            \"id\": \"4\",\n            \"teamName\": \"india\",\n            \"coachName\": \"Ashish Nehra\",\n            \"PlayerDetails\": [\n                {\n                    \"id\": 1,\n                    \"playerName\": \"Ms Dhoni\",\n                    \"type\": \"batsman\"\n                },\n                {\n                    \"id\": 4,\n                    \"playerName\": \"Jadeja\",\n                    \"type\": \"batsman\"\n                },\n                {\n                    \"id\": 5,\n                    \"playerName\": \"Ashwin\",\n                    \"type\": \"bowler\"\n                },\n                {\n                    \"id\": 6,\n                    \"playerName\": \"bumrah\",\n                    \"type\": \"bowler\"\n                },\n                {\n                    \"id\": 7,\n                    \"playerName\": \"shami\",\n                    \"type\": \"bowler\"\n                },\n                {\n                    \"id\": 8,\n                    \"playerName\": \"bhuvneshware\",\n                    \"type\": \"bowler\"\n                },\n                {\n                    \"id\": 9,\n                    \"playerName\": \"Thakur\",\n                    \"type\": \"all-rounder\"\n                },\n                {\n                    \"id\": 2,\n                    \"playerName\": \"Hardik Pandya\",\n                    \"type\": \"batsman\"\n                }\n            ]\n        },\n        {\n            \"id\": \"9\",\n            \"teamName\": \"Austreliya\",\n            \"coachName\": \"team cook\",\n            \"PlayerDetails\": [\n                {\n                    \"id\": 10,\n                    \"playerName\": \"David warner\",\n                    \"type\": \"all-rounder\"\n                },\n                {\n                    \"id\": 11,\n                    \"playerName\": \"camron green\",\n                    \"type\": \"all-rounder\"\n                },\n                {\n                    \"id\": 12,\n                    \"playerName\": \"Josh Hazlewood\",\n                    \"type\": \"bowler\"\n                },\n                {\n                    \"id\": 13,\n                    \"playerName\": \"pat cuumins\",\n                    \"type\": \"bowler\"\n                },\n                {\n                    \"id\": 14,\n                    \"playerName\": \"Mitchell marsh\",\n                    \"type\": \"batsman\"\n                },\n                {\n                    \"id\": 15,\n                    \"playerName\": \"Marcus Harris\",\n                    \"type\": \"batsman\"\n                }\n            ]\n        }\n    ],\n    \"message\": \"Data Fetch SuccessFully \"\n}"
+						}
+					]
+				},
+				{
+					"name": "get one player with team.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/Player/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"Player",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get one player with team.",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/Player/1",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"Player",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "181"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b5-ndG47y/y5eEbSCpFcjG+SYC4RUM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Jul 2023 05:05:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"StatusCode\": 200,\n    \"data\": {\n        \"playerName\": \"Ms Dhoni\",\n        \"type\": \"batsman\",\n        \"TeamsDetail\": {\n            \"teamName\": \"india\",\n            \"coachName\": \"Ashish Nehra\"\n        }\n    },\n    \"message\": \"Data Fetch SuccessFully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
