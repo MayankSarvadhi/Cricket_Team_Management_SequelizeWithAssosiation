@@ -41,7 +41,8 @@ DB_DIALECT=postgres
 
 - In the src/database/index.js file, configure the database connection:
 
-```const { Sequelize } = require('sequelize');```
+```const { Sequelize } = require('sequelize');
+```
 
 - Define the Team model and its associations in the src/models/team.js file:
 
@@ -114,4 +115,4 @@ DB_DIALECT=postgres
 
  - Get one player with their team:```GET http://localhost:9600/Player/:id ```
 
-- Feel free to customize the endpoint paths and HTTP methods according to your project's requirements.
+***Feel free to customize the endpoint paths and HTTP methods according to your project's requirements.***
