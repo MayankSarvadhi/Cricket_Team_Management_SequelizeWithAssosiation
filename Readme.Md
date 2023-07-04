@@ -98,12 +98,12 @@ DB_DIALECT=postgres
 
   ### Team Endpoints
 
- - Create a new team: ***POST http://localhost:9600/Teams***
- - Update an existing team: ***PUT http://localhost:9600/Teams/:id***
- - Delete a team: ***DELETE http://localhost:9600/Teams/:id***
- - Get all teams with their players:  http://localhost:9600/Teams 
- - Get one team with all players:  http://localhost:9600/Teams/:id 
- - Get AllTypes of Player for a particular team:   http://localhost:9600/allTypes/:id 
+ - Create a new team: ```POST http://localhost:9600/Teams```
+ - Update an existing team: ```PUT http://localhost:9600/Teams/:id```
+ - Delete a team: ```DELETE http://localhost:9600/Teams/:id```
+ - Get all teams with their players: ```http://localhost:9600/Teams ```
+ - Get one team with all players:  ```http://localhost:9600/Teams/:id ```
+ - Get AllTypes of Player for a particular team:   ```http://localhost:9600/allTypes/:id ```
 
 
   ### Player Endpoints
@@ -111,6 +111,7 @@ DB_DIALECT=postgres
  - Create a new player: ```POST http://localhost:9600/Player```
  - Update an existing player: ``` PUT http://localhost:9600/Player/:id ```
  - Delete a player: ``` DELETE http://localhost:9600/Player/:id```
- -Get one player with their team:```GET http://localhost:9600/Player/:id ```
+
+ - Get one player with their team:```GET http://localhost:9600/Player/:id ```
 
 - Feel free to customize the endpoint paths and HTTP methods according to your project's requirements.
