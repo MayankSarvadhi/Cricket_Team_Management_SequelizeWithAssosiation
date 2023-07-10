@@ -9,7 +9,7 @@ routes.use("/Team", TeamRouters);
 routes.use("/Player", PlayerController);
 
 const invalidedRouter = asyncWrapper((req, res, next) => {
-    return next(new AppError(`${req.url} - Bad Request`, 400));
+    return next(new AppError(`${req.url} - Bad Request / Page not Found`, 404));
 });
 routes.all("*", invalidedRouter);
 
